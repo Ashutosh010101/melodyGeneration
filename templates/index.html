@@ -1,29 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title> Student Result Prediction </title>
-</head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url("bgimg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .heading {
+            border-radius: 1vw;
+            width: 100%;
+            background-color: #382a21;
+            width: fit-content;
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 1vw 2vw 1vw 2vw;
+            margin-top: 2vw;
+        }
+
+        .heading>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .heading>div>h1 {
+            font-size: 4vw;
+        }
+
+        .heading>div>h4 {
+            font-size: 2vw;
+        }
+
+        .mainForm {
+            padding: 3vw;
+            border-radius: 2vw;
+            margin: 2.5vw 0 0 0vw;
+            color: white;
+            background-color: #382a21;
+        }
+
+        .mainForm>form>div,
+        .mainForm>form>button {
+            font-size: 1.3vw;
+            margin-top: 1vw;
+        }
+
+        .mainForm>form>div>label {
+            padding-right: 0.5vw;
+        }
+
+        .mainForm>form>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mainForm>form>button {
+            width: 100%;
+            background-color: #ffcf36;
+            padding: 0.5vw 0;
+            border: none;
+            border-radius: 0.6vw;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .mainForm>form>button:hover {
+            cursor: pointer;
+            box-shadow: none;
+        }
+
+        .mainForm>form>div>input[type="text"] {
+            font-size: 1vw;
+            padding: 0.4vw;
+            background-color: #ffc70e6b;
+            border-radius: 0.2vw;
+            border: none;
+        }
+
+        #team {
+            font-size: 1.2vw;
+            margin-top: 0.6vw;
+            background-color: #ffd036c4;
+        }
+
+
+        @media screen and (max-width: 900px) {
+            .heading>div>h1 {
+                font-size: 8vw;
+            }
+
+            .heading>div>h4 {
+                font-size: 4.5vw;
+            }
+
+            .mainForm>form>div,
+            .mainForm>form>button {
+                font-size: 3.3vw;
+                margin-top: 2vw;
+            }
+
+            .mainForm {
+                width: 70%;
+            }
+
+            .mainForm>form>div>input[type="text"] {
+                width: 40%;
+            }
+
+            #team {
+                font-size: 2vw;
+            }
+        }
+    </style>
+    <title>Melody Generation</title>
+</head>
+
 <body>
-	 
-   <h2>Result Prediction</h2>
-	<h3>Predict the probability of Student Result(Pass/Fail) </h3>
-            
-    <form action='/predict' method="post">
-      <table>
-		<tr><td> Daily Self Study
-			<td>  <input  name="self_study"  placeholder="Daily Self Study (in hrs) " >
-        </tr>
-        <tr><td> Monthly time spent on Tutorials
-            <td>  <input  name="tutorials_montly" placeholder="Time on Tutorials (in hrs)" > 
-		</tr>
-        <tr>
-		<td colspan=2 align=center><br><button type="submit">Predict Probability</button>
-		</tr>
-	  </table>
-    </form>
-       
-     <br> {{pred}}<br>  
+    <div class="heading">
+        <div>
+            <h1>Melody Generation</h1>
+            <h4>Using LSTM & Music21</h4>
+        </div>
+    </div>
+    <div class="mainForm">
+        <form action="">
+            <div>
+                <label for="steps">Enter number of steps: </label>
+                <input type="text" name="steps">
+            </div>
+            <div>
+                <label for="temp">Enter Temperature: </label>
+                <input type="text" name="temp">
+            </div>
+            <div>
+                <label for="steps">Enter Squence 1: </label>
+                <input type="text" name="steps">
+            </div>
+            <div>
+                <label for="steps">Enter Squence 2: </label>
+                <input type="text" name="steps">
+            </div>
+            <div>
+                <label for="steps">Enter Squence 3: </label>
+                <input type="text" name="steps">
+            </div>
+            <div>
+                <label for="steps">Enter Squence 4: </label>
+                <input type="text" name="steps">
+            </div>
+            <div>
+                <label for="steps">Enter Squence 5: </label>
+                <input type="text" name="steps">
+            </div>
+            <button>Generate</button>
+        </form>
+    </div>
+    <div>
+        <h4 id="team">This project is made by Ashutosh, Kavita, Ramania</h4>
+    </div>
+</body>
 
-  </body>
 </html>
-
