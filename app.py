@@ -2,7 +2,7 @@
 from flask import Flask,request, url_for, redirect, render_template
 #import tensorflow as tf
 #from tensorflow import keras
-import tensorflow.keras as keras
+import keras as keras
 import numpy as np
 
 app = Flask(__name__)
