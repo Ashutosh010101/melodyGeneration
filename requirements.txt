@@ -4,6 +4,4 @@ Jinja2
 numpy
 pandas
 music21
-json
 tensorflow.keras
-
