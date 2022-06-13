@@ -4,4 +4,4 @@ Jinja2
 numpy
 pandas
 music21
-keras=="2.8.0"
+keras=="2.6.0"
