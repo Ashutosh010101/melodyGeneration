@@ -5,7 +5,8 @@ from tensorflow import keras
 import numpy as np
 
 app = Flask(__name__)
-model=pickle.load(open('model.h5','rb'))
+#model=pickle.load(open('model.h5','rb'))
+model=tf.keras.models.load_model('model.h5')
 
 @app.route('/')
 def home():
