@@ -5,3 +5,4 @@ numpy
 pandas
 music21
 keras
+tensorflows
