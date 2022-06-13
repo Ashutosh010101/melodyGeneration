@@ -3,5 +3,4 @@ gunicorn
 Jinja2
 numpy
 music21
-Keras==2.1.5
-tensorflow==1.7.0
+tensorflow
