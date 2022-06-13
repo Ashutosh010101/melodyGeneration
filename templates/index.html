@@ -76,9 +76,11 @@
             justify-content: space-between;
         }
         
-        :-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: red;
+        ::placeholder {
+          color: red;
+          opacity: 1; /* Firefox */
         }
+
 
         .mainForm>form>button {
             width: 100%;
