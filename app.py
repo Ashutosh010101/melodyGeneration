@@ -1,5 +1,7 @@
 #app.py
 from flask import Flask,request, url_for, redirect, render_template
+import tensorflow as tf
+from tensorflow import keras
 import numpy as np
 
 app = Flask(__name__)
