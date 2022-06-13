@@ -75,6 +75,10 @@
             display: flex;
             justify-content: space-between;
         }
+        
+        .mainForm>form>div>input-placeholder { /* Microsoft Edge */
+         color: red;
+            }
 
         .mainForm>form>button {
             width: 100%;
@@ -132,6 +136,7 @@
                 font-size: 2vw;
             }
         }
+        
     </style>
     <title>Melody Generation</title>
 </head>
@@ -147,7 +152,7 @@
         <form action="/predict" method="post">
             <div>
                 <label for="steps">Enter number of steps: </label>
-                <input type="text" name="steps" placeholder = "values start from 500" color = #000000>
+                <input type="text" name="steps" placeholder = "values start from 500" >
             </div>
             <div>
                 <label for="temp">Enter Temperature: </label>
