@@ -3,7 +3,6 @@ gunicorn
 Jinja2
 numpy
 pandas
-os
 music21
 json
 tensorflow.keras
