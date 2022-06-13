@@ -3,4 +3,4 @@ gunicorn
 Jinja2
 numpy
 music21
-tensorflow
+keras
