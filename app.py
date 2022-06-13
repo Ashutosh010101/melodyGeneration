@@ -17,9 +17,9 @@ def predict():
     # receive the values send by user in three text boxes thru request object -> requesst.form.values()
     
     int_features = [eval(x) for x in request.form.values()]
-
+    
    
-    return render_template('index.html', pred='Student passing probability is :  {}'.format(output))
+    return render_template('index.html', pred='Student passing probability is :  {}'.format(int_features))
 
 if __name__ == '__main__':
     app.run(debug=False)
