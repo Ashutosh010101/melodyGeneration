@@ -4,4 +4,4 @@ Jinja2
 numpy
 music21
 keras
-tensorflow
+tensorflow-cpu
